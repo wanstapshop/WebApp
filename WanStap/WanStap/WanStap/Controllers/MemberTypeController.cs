@@ -31,6 +31,7 @@ namespace WanStap.Controllers
 
         // GET: MemberType
         [Route("Add")]
+        [HttpPost]
         public IHttpActionResult Add(MemberTypeDTO model)
         {
             var result = _memberTypeManager.InsertMemberType(model);
