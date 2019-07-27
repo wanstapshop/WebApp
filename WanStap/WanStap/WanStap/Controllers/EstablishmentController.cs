@@ -28,8 +28,8 @@ namespace WanStap.Controllers
             }
         }
 
-        [Route("Add")]
         [HttpPost]
+        [Route("api/establishment/Add")]
         public IHttpActionResult Add(EstablishmentDTO model)
         {
             var result = _establishmentManager.InsertEstablishment(model, 0);
