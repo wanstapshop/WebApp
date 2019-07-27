@@ -12,4 +12,10 @@ namespace WanStap.DTO
         public int EstablishmentTypeID { get; set; }
         public int Capacity { get; set; }
     }
+
+    public class EstablishmentUpdateDTO 
+    {
+        public int EstablishmentID { get; set; }
+        public string Name { get; set; }
+    }
 }

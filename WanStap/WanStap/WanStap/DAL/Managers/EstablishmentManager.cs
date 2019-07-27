@@ -37,5 +37,30 @@ namespace WanStap.DAL.Managers
                 return null;
             }
         }
+
+        public Establishment UpdateEstablishment(EstablishmentUpdateDTO dto, int user)
+        {
+            try
+            {
+                var item = _establishment.GetById(dto.EstablishmentID);
+
+                if(item == null)
+                {
+                    return null;
+                }
+
+                item.Name = dto.Name;
+                item.ModifiedBy = user;
+                item.ModifiedDateTime = _establishment.GetCurrentDate();
+
+                _establishment.Edit(item);
+                _establishment.SaveChanges();
+                return item;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
     }
 }

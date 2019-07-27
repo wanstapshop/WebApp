@@ -39,5 +39,17 @@ namespace WanStap.Controllers
             }
             return Ok(result);
         }
+
+        [HttpPost]
+        [Route("api/establishment/Edit")]
+        public IHttpActionResult Edit(EstablishmentUpdateDTO model)
+        {
+            var result = _establishmentManager.UpdateEstablishment(model, 0);
+            if (result == null)
+            {
+                return BadRequest("Error editing establishment.");
+            }
+            return Ok(result);
+        }
     }
 }
