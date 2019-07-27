@@ -206,13 +206,16 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EstablishmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MemberTypeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DAL\Managers\EstablishmentManager.cs" />
     <Compile Include="DAL\Managers\MemberManager.cs" />
     <Compile Include="DAL\Managers\MemberTypeManager.cs" />
     <Compile Include="DAL\Repository\GenericRepository.cs" />
     <Compile Include="DAL\Repository\IGenericRepository.cs" />
+    <Compile Include="DTO\EstablishmentDTO.cs" />
     <Compile Include="DTO\MemberDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -236,6 +239,10 @@
     <Compile Include="MigrationsWanStap\201907131142086_UPDATE005.cs" />
     <Compile Include="MigrationsWanStap\201907131142086_UPDATE005.Designer.cs">
       <DependentUpon>201907131142086_UPDATE005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigrationsWanStap\201907271147125_UPDATE006.cs" />
+    <Compile Include="MigrationsWanStap\201907271147125_UPDATE006.Designer.cs">
+      <DependentUpon>201907271147125_UPDATE006.cs</DependentUpon>
     </Compile>
     <Compile Include="MigrationsWanStap\Configuration.cs" />
     <Compile Include="Migrations\201907060358580_InitialCreate.cs" />
@@ -338,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MigrationsWanStap\201907131142086_UPDATE005.resx">
       <DependentUpon>201907131142086_UPDATE005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigrationsWanStap\201907271147125_UPDATE006.resx">
+      <DependentUpon>201907271147125_UPDATE006.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907060358580_InitialCreate.resx">
       <DependentUpon>201907060358580_InitialCreate.cs</DependentUpon>
