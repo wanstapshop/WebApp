@@ -240,6 +240,10 @@
     <Compile Include="MigrationsWanStap\201907131142086_UPDATE005.Designer.cs">
       <DependentUpon>201907131142086_UPDATE005.cs</DependentUpon>
     </Compile>
+    <Compile Include="MigrationsWanStap\201907271147125_UPDATE006.cs" />
+    <Compile Include="MigrationsWanStap\201907271147125_UPDATE006.Designer.cs">
+      <DependentUpon>201907271147125_UPDATE006.cs</DependentUpon>
+    </Compile>
     <Compile Include="MigrationsWanStap\Configuration.cs" />
     <Compile Include="Migrations\201907060358580_InitialCreate.cs" />
     <Compile Include="Migrations\201907060358580_InitialCreate.Designer.cs">
@@ -341,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MigrationsWanStap\201907131142086_UPDATE005.resx">
       <DependentUpon>201907131142086_UPDATE005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigrationsWanStap\201907271147125_UPDATE006.resx">
+      <DependentUpon>201907271147125_UPDATE006.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907060358580_InitialCreate.resx">
       <DependentUpon>201907060358580_InitialCreate.cs</DependentUpon>

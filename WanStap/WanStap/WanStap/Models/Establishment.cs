@@ -26,7 +26,7 @@ namespace WanStap.Models
         
         public int CreatedBy { get; set; }
         public DateTime? ModifiedDateTime { get; set; }
-        public int ModifiedBy { get; set; }
+        public int? ModifiedBy { get; set; }
 
         public virtual Member Member { get; set; }
         public virtual EstablishmentType EstablishmentType { get; set; }
